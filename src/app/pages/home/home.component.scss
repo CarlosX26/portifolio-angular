@@ -1,0 +1,49 @@
+@import "../../../theme.scss";
+
+main {
+  background-color: rgba(0, 0, 0, 0.9);
+  height: calc(100% - 64px);
+  position: relative;
+}
+.container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box__info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.box__info > h2 {
+  color: $white;
+}
+.box__info > h1 {
+  color: $white;
+  font-size: 72px;
+}
+.box__info > p {
+  color: $white;
+  max-width: 432px;
+  letter-spacing: 2px;
+}
+
+.box__image > img {
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  object-position: center;
+}
