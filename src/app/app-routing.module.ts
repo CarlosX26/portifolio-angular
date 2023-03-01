@@ -1,3 +1,4 @@
+import { ContactComponent } from "./pages/contact/contact.component";
 import { ExperiencesComponent } from "./pages/experiences/experiences.component";
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: "experiences",
     component: ExperiencesComponent,
+  },
+  {
+    path: "contact",
+    component: ContactComponent,
   },
 ];
 

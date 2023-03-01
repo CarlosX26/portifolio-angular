@@ -16,6 +16,7 @@ import { SliderShowCardComponent } from "./components/slider-show-card/slider-sh
 import { MatButtonModule } from "@angular/material/button";
 import { ExperiencesComponent } from "./pages/experiences/experiences.component";
 import { MatIconModule } from "@angular/material/icon";
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { MatIconModule } from "@angular/material/icon";
     SliderShowComponent,
     SliderShowCardComponent,
     ExperiencesComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
