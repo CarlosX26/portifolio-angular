@@ -14,7 +14,8 @@ import { ProjectsComponent } from "./pages/projects/projects.component";
 import { SliderShowComponent } from "./components/slider-show/slider-show.component";
 import { SliderShowCardComponent } from "./components/slider-show-card/slider-show-card.component";
 import { MatButtonModule } from "@angular/material/button";
-import { ExperiencesComponent } from './pages/experiences/experiences.component';
+import { ExperiencesComponent } from "./pages/experiences/experiences.component";
+import { MatIconModule } from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ExperiencesComponent } from './pages/experiences/experiences.component'
     MatListModule,
     MatCardModule,
     MatButtonModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

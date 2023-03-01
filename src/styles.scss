@@ -5,6 +5,8 @@
   font-family: Roboto, "Helvetica Neue", sans-serif;
   text-decoration: none;
   border: none;
+  list-style: none;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -22,5 +24,6 @@ button {
 
 .container {
   width: 90%;
+  max-width: 1440px;
   margin: 0 auto;
 }
