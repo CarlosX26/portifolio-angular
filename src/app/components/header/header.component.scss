@@ -3,6 +3,9 @@
 .container {
   display: flex;
   justify-content: space-between;
+  & a > h2 {
+    color: $white;
+  }
 
   & > nav {
     display: flex;
