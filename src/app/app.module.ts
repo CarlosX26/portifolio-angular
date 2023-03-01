@@ -10,9 +10,10 @@ import { SkillsComponent } from "./pages/skills/skills.component";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatListModule } from "@angular/material/list";
 import { MatCardModule } from "@angular/material/card";
+import { ProjectsComponent } from './pages/projects/projects.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent, SkillsComponent],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, SkillsComponent, ProjectsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
