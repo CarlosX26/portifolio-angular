@@ -1,0 +1,65 @@
+@import "../../../theme.scss";
+
+section {
+  background-color: $gray2;
+  min-height: calc(100% - 64px);
+}
+
+.container > h2 {
+  color: $white;
+  font-size: 32px;
+  margin: 0;
+  padding-top: 16px;
+}
+
+.mat-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding: 16px 0;
+}
+.mat-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 248px;
+  gap: 16px;
+}
+.mat-card-title {
+  width: 100%;
+  text-align: center;
+}
+
+.mat-card-content {
+  display: none;
+  overflow-y: scroll;
+}
+.mat-card-content::-webkit-scrollbar {
+  width: 0px;
+}
+
+.mat-card > p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 16px;
+  max-height: 32px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.mat-card:hover {
+  & > .mat-card-title {
+    display: none;
+  }
+  & > p {
+    display: none;
+  }
+  .mat-card-content {
+    display: block;
+  }
+  & > span {
+    display: none;
+  }
+}
