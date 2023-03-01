@@ -1,13 +1,22 @@
 <mat-card>
-  <video id="teste" autoplay loop playsinline [src]="elementVideo"></video>
+  <video autoplay loop playsinline muted [src]="elementVideo"></video>
   <div>
     <mat-card-title>{{ elementName }}</mat-card-title>
     <mat-card-content>
       <p>
         {{ elementDescription }}
       </p>
-      <a href="" target="_blank">Ver projeto</a>
-      <a href="" target="_blank">Repositório</a>
+
+      <div>
+        <a
+          mat-flat-button
+          color="primary"
+          [href]="links.ref"
+          target="_blank"
+          *ngFor="let links of elementLinks"
+          >{{ links.name }}</a
+        >
+      </div>
     </mat-card-content>
   </div>
 </mat-card>

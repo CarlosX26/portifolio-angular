@@ -8,5 +8,9 @@ export interface IProjectsList {
   name: string;
   video: string;
   description: string;
-  link: string;
+  links: ILinksProject[];
+}
+export interface ILinksProject {
+  name: string;
+  ref: string;
 }

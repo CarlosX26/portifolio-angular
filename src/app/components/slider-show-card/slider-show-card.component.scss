@@ -31,10 +31,8 @@
   & > p {
     font-style: italic;
   }
-  & > a {
-    color: $white;
-  }
-  & > a ~ a {
-    padding-left: 16px;
+  & > div {
+    display: flex;
+    gap: 16px;
   }
 }

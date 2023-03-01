@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from "@angular/core";
+import { ILinksProject } from "src/app/services/database/types";
 
 @Component({
   selector: "app-slider-show-card",
@@ -9,7 +10,7 @@ export class SliderShowCardComponent implements OnInit {
   @Input() elementVideo!: string;
   @Input() elementName!: string;
   @Input() elementDescription!: string;
-  @Input() elementLink!: string;
+  @Input() elementLinks!: ILinksProject[];
 
   constructor() {}
 
