@@ -11,9 +11,11 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatListModule } from "@angular/material/list";
 import { MatCardModule } from "@angular/material/card";
 import { ProjectsComponent } from './pages/projects/projects.component';
+import { SliderShowComponent } from './components/slider-show/slider-show.component';
+import { SliderShowCardComponent } from './components/slider-show-card/slider-show-card.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent, SkillsComponent, ProjectsComponent],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, SkillsComponent, ProjectsComponent, SliderShowComponent, SliderShowCardComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

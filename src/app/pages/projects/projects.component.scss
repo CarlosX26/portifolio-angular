@@ -1,0 +1,13 @@
+@import "../../../theme.scss";
+
+section {
+  height: calc(100% - 64px);
+  background-color: $gray2;
+}
+
+.container > h2 {
+  color: $white;
+  font-size: 32px;
+  margin: 0;
+  padding-top: 16px;
+}
