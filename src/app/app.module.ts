@@ -14,6 +14,7 @@ import { ProjectsComponent } from "./pages/projects/projects.component";
 import { SliderShowComponent } from "./components/slider-show/slider-show.component";
 import { SliderShowCardComponent } from "./components/slider-show-card/slider-show-card.component";
 import { MatButtonModule } from "@angular/material/button";
+import { ExperiencesComponent } from './pages/experiences/experiences.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { MatButtonModule } from "@angular/material/button";
     ProjectsComponent,
     SliderShowComponent,
     SliderShowCardComponent,
+    ExperiencesComponent,
   ],
   imports: [
     BrowserModule,
