@@ -1,11 +1,10 @@
 <mat-card>
-  <img src="../../../assets/img/spot.png" alt="project image" />
+  <video id="teste" autoplay loop playsinline [src]="elementVideo"></video>
   <div>
-    <mat-card-title>Spotify Clone</mat-card-title>
+    <mat-card-title>{{ elementName }}</mat-card-title>
     <mat-card-content>
       <p>
-        Spotify Clone, uma simples aplicação web onde o intuito é apenas mostrar
-        o poder de estilização do tailwind css.
+        {{ elementDescription }}
       </p>
       <a href="" target="_blank">Ver projeto</a>
       <a href="" target="_blank">Repositório</a>

@@ -1,3 +1,8 @@
-<ul class="slider__box">
-  <app-slider-show-card *ngFor="let n of [1, 2, 3, 4]"></app-slider-show-card>
+<ul class="slider__box" (wheel)="scrollCards($event)" [scrollLeft]="scroll">
+  <app-slider-show-card
+    *ngFor="let element of listToRender"
+    [elementVideo]="element.video"
+    [elementName]="element.name"
+    [elementDescription]="element.description"
+  ></app-slider-show-card>
 </ul>

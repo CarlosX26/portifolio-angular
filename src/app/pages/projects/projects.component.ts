@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { IProjectsList } from "src/app/services/database/types";
+import { projectsList } from "../../services/database/projects";
 
 @Component({
   selector: "app-projects",
@@ -6,7 +8,11 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./projects.component.scss"],
 })
 export class ProjectsComponent implements OnInit {
+  projectsList: IProjectsList[] = [];
+
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.projectsList = projectsList;
+  }
 }
