@@ -1,3 +1,4 @@
+import { ExperiencesComponent } from "./pages/experiences/experiences.component";
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { HomeComponent } from "./pages/home/home.component";
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: "projects",
     component: ProjectsComponent,
+  },
+  {
+    path: "experiences",
+    component: ExperiencesComponent,
   },
 ];
 
