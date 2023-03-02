@@ -2,7 +2,7 @@
 
 section {
   min-height: calc(100vh - 64px);
-  background-color: $gray2;
+  background-color: $gray-3;
 }
 .container > h2 {
   color: $white;
@@ -23,7 +23,7 @@ section {
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  background-color: #424242;
+  background-color: $gray-2;
 }
 .mat-input-element {
   color: $white;
