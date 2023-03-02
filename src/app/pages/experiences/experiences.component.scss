@@ -63,6 +63,12 @@ section {
   }
 }
 
+@media (width <= 599px) {
+  section {
+    min-height: calc(100vh - 56px);
+  }
+}
+
 @media (width <= 500px) {
   .experience__item > .mat-card {
     flex-direction: column;
