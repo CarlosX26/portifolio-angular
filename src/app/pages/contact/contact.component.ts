@@ -34,25 +34,28 @@ export class ContactComponent implements OnInit {
   }
 
   onSubmit(): void {
-    const data = this.formGroup.value;
+    if (this.formGroup.valid) {
+      const data = this.formGroup.value;
 
-    const urlBase =
-      "https://api.whatsapp.com/send?phone=+55++98981464032&text=";
+      const urlBase =
+        "https://api.whatsapp.com/send?phone=+55++98981464032&text=";
 
-    const message = `*MENSAGEM ENVIADA A PARTIR DE MEU PORTFÓLIO*%0A%0A
-----------------------------------------------------------------%0A%0A
-*Nome: ${data.name}*%0A%0A
-*Email: ${data.email}*%0A%0A
-----------------------------Mensagem----------------------------%0A%0A
-${data.message}
-`;
+      const message = `
+       *MENSAGEM ENVIADA A PARTIR DE MEU PORTFÓLIO*%0A%0A
+        ----------------------------------------------------------------%0A%0A
+        *Nome: ${data.name}*%0A%0A
+        *Email: ${data.email}*%0A%0A
+        ----------------------------Mensagem----------------------------%0A%0A
+        ${data.message}
+      `;
 
-    window.open(`${urlBase}${message}`, "_blank");
+      window.open(`${urlBase}${message}`, "_blank");
 
-    this.formGroup.reset({
-      name: "",
-      email: "",
-      message: "",
-    });
+      this.formGroup.reset({
+        name: "",
+        email: "",
+        message: "",
+      });
+    }
   }
 }

@@ -38,7 +38,7 @@ export const skillsList: ISkillsList[] = [
   },
   {
     name: "REACT NATIVE",
-    img: "../../../assets/img/icon-native.png",
+    img: "../../../assets/img/icon-native.webp",
     description:
       "React Native é uma biblioteca Javascript criada pelo Facebook. É usada para desenvolver aplicativos para os sistemas Android e iOS de forma nativa",
     experience: "3 meses",
@@ -80,14 +80,14 @@ export const skillsList: ISkillsList[] = [
   },
   {
     name: "EXPRESS.JS",
-    img: "../../../assets/img/expressjs.png",
+    img: "../../../assets/img/expressjs.webp",
     description:
       "Express.js é um framework para Node.js que fornece recursos mínimos para construção de servidores web. Foi lançado como software livre e de código aberto sob a Licença MIT. É um dos mais populares frameworks para servidores em Node.js.",
     experience: "6 meses",
   },
   {
     name: "TYPEORM",
-    img: "../../../assets/img/typeorm.png",
+    img: "../../../assets/img/typeorm.webp",
     description:
       "TypeORM é uma biblioteca TypeScript ORM (mapeador relacional de objeto) que facilita a vinculação de seu aplicativo TypeScript a um banco de dados de banco de dados relacional. TypeORM suporta MySQL, SQlite, Postgres, MS SQL Server e uma série de outras opções tradicionais.",
     experience: "6 meses",
@@ -101,7 +101,7 @@ export const skillsList: ISkillsList[] = [
   },
   {
     name: "JEST",
-    img: "../../../assets/img/icons8-jest.png",
+    img: "../../../assets/img/icons8-jest.webp",
     description:
       "Jest é uma estrutura de teste de JavaScript construída sobre o Jasmine e mantida pela Meta. Ele foi projetado e construído por Christoph Nakazawa com foco na simplicidade e suporte para grandes aplicativos da web. Funciona com projetos usando Babel, TypeScript, Node.js, React, Angular, Vue.js e Svelte.",
     experience: "6 meses",
