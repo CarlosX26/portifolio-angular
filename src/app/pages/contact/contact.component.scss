@@ -1,7 +1,7 @@
 @import "../../../theme.scss";
 
 section {
-  min-height: calc(100% - 64px);
+  min-height: calc(100vh - 64px);
   background-color: $gray2;
 }
 .container > h2 {
@@ -56,7 +56,7 @@ section {
 
 @media (width <= 599px) {
   section {
-    min-height: calc(100% - 56px);
+    min-height: calc(100vh - 56px);
   }
 }
 
