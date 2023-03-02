@@ -3,6 +3,8 @@
 .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
   & a > h2 {
     color: $white;
   }
@@ -25,4 +27,16 @@
 
 .mat-toolbar-single-row {
   padding: 0;
+}
+.button__menu {
+  display: none;
+}
+
+@media (width <= 585px) {
+  .container > nav {
+    display: none;
+  }
+  .button__menu {
+    display: inline-block;
+  }
 }
