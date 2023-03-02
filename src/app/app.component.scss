@@ -1,0 +1,14 @@
+@import "../theme.scss";
+
+.sidenav-custom {
+  width: 60%;
+}
+
+.mat-list-base {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  & > a {
+    color: $white;
+  }
+}
