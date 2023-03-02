@@ -1,0 +1,19 @@
+@import "../../../theme.scss";
+
+section {
+  height: calc(100vh - 64px);
+  background-color: $gray-3;
+}
+
+.container > h2 {
+  color: $white;
+  font-size: 32px;
+  margin: 0;
+  padding-top: 16px;
+}
+
+@media (width <= 599px) {
+  section {
+    height: calc(100vh - 56px);
+  }
+}

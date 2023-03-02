@@ -1,0 +1,52 @@
+@import "../../../theme.scss";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & > a {
+    transition: all 0.3s ease-in-out;
+  }
+  & > a:hover {
+    transform: rotate(360deg);
+  }
+  & > a > h2 {
+    color: $white;
+  }
+
+  & > nav {
+    display: flex;
+    gap: 24px;
+  }
+  & > nav > a {
+    color: $white;
+    transition: 0.3s ease-in-out;
+    font-size: 16px;
+  }
+  & > nav > a > div {
+    height: 2px;
+    width: 0px;
+    background-color: $white;
+    transition: all 0.3s ease-in-out;
+  }
+  & > nav > a:hover > div {
+    width: 100%;
+  }
+}
+
+.mat-toolbar-single-row {
+  padding: 0;
+}
+.button__menu {
+  display: none;
+}
+
+@media (width <= 585px) {
+  .container > nav {
+    display: none;
+  }
+  .button__menu {
+    display: inline-block;
+  }
+}

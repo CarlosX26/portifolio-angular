@@ -1,0 +1,67 @@
+<section>
+  <div class="container">
+    <h2>Contato</h2>
+    <div class="box__contact">
+      <form
+        class="contact__form"
+        [formGroup]="formGroup"
+        (ngSubmit)="onSubmit()"
+      >
+        <mat-form-field>
+          <mat-label>Nome</mat-label>
+          <input
+            type="text"
+            placeholder="Digite seu nome..."
+            matInput
+            formControlName="name"
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input
+            type="text"
+            placeholder="Digite seu email..."
+            matInput
+            formControlName="email"
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Mensagem</mat-label>
+          <textarea
+            type="text"
+            placeholder="Digite seu email..."
+            rows="24"
+            matInput
+            formControlName="message"
+          ></textarea>
+        </mat-form-field>
+        <button mat-flat-button color="primary" type="submit">
+          Enviar mensagem
+        </button>
+      </form>
+
+      <mat-card>
+        <img src="../../../assets/img/profile.jpg" alt="image of profile" />
+        <div>
+          <a href="https://www.linkedin.com/in/carlos-junio26/" target="_blank">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <a href="https://github.com/CarlosX26" target="_blank">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a href="mailto:cjunior1@live.com" target="_blank">
+            <i class="bx bxs-envelope"></i>
+          </a>
+        </div>
+        <div *ngIf="contactInfo">
+          <p>
+            ENACOM Group challenge<br />
+            informações para contato<br />
+            tel: {{ contactInfo.tel }}<br />
+            email: {{ contactInfo.email }}
+          </p>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</section>

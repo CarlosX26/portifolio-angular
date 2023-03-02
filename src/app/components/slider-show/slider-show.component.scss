@@ -1,0 +1,13 @@
+@import "../../../theme.scss";
+
+.slider__box {
+  padding: 16px 0;
+  height: 80vh;
+  display: flex;
+  overflow: auto;
+  gap: 16px;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}

@@ -1,0 +1,13 @@
+<section>
+  <div class="container">
+    <h2>Skills</h2>
+    <mat-list>
+      <mat-card *ngFor="let skill of skillsList">
+        <img [src]="skill.img" alt="image of technology" mat-card-sm-image />
+        <mat-card-title>{{ skill.name }}</mat-card-title>
+        <mat-card-content>{{ skill.description }}</mat-card-content>
+        <span>Experiência: {{ skill.experience }}</span>
+      </mat-card>
+    </mat-list>
+  </div>
+</section>
