@@ -5,11 +5,8 @@
       <mat-card *ngFor="let skill of skillsList">
         <img [src]="skill.img" alt="image of technology" mat-card-sm-image />
         <mat-card-title>{{ skill.name }}</mat-card-title>
-        <p>
-          {{ skill.description }}
-        </p>
         <mat-card-content>{{ skill.description }}</mat-card-content>
-        <span>Tempo de linguagem: {{ skill.experience }}</span>
+        <span>Experiência: {{ skill.experience }}</span>
       </mat-card>
     </mat-list>
   </div>
