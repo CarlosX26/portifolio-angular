@@ -53,6 +53,14 @@
             <i class="bx bxs-envelope"></i>
           </a>
         </div>
+        <div *ngIf="contactInfo">
+          <p>
+            ENACOM Group challenge<br />
+            informações para contato<br />
+            tel: {{ contactInfo.tel }}<br />
+            email: {{ contactInfo.email }}
+          </p>
+        </div>
       </mat-card>
     </div>
   </div>
