@@ -14,7 +14,7 @@ section {
 .box__contact {
   display: flex;
   gap: 16px;
-  padding-top: 16px;
+  padding: 16px 0;
 }
 
 .contact__form {
@@ -51,5 +51,24 @@ section {
   & > div > a {
     color: $white;
     font-size: 40px;
+  }
+}
+
+@media (width <= 580px) {
+  .box__contact {
+    flex-direction: column;
+  }
+  .contact__form {
+    width: 100%;
+  }
+  .mat-card {
+    width: 100%;
+
+    & > img {
+      display: none;
+    }
+  }
+  textarea {
+    height: 232px;
   }
 }
