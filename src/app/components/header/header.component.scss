@@ -5,7 +5,13 @@
   justify-content: space-between;
   align-items: center;
 
-  & a > h2 {
+  & > a {
+    transition: all 0.3s ease-in-out;
+  }
+  & > a:hover {
+    transform: rotate(360deg);
+  }
+  & > a > h2 {
     color: $white;
   }
 
