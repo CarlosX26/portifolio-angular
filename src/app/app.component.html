@@ -13,7 +13,7 @@
     </mat-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <app-header></app-header>
+    <app-header (toggleSideNav)="nav.toggle()"></app-header>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
