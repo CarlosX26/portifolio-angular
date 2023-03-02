@@ -22,6 +22,7 @@ import { MatInputModule } from "@angular/material/input";
 import { ReactiveFormsModule } from "@angular/forms";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatDividerModule } from "@angular/material/divider";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { MatDividerModule } from "@angular/material/divider";
     ReactiveFormsModule,
     MatSidenavModule,
     MatDividerModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
