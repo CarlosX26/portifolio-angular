@@ -1,2 +1,19 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
+<mat-sidenav-container>
+  <mat-sidenav class="sidenav-custom" position="end" mode="over" #nav>
+    <mat-list>
+      <a mat-button routerLink="">Home</a>
+      <mat-divider></mat-divider>
+      <a mat-button routerLink="skills">Skills</a>
+      <mat-divider></mat-divider>
+      <a mat-button routerLink="projects">Projetos</a>
+      <mat-divider></mat-divider>
+      <a mat-button routerLink="experiences">Experiências</a>
+      <mat-divider></mat-divider>
+      <a mat-button routerLink="contact">Contato</a>
+    </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

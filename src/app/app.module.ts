@@ -20,6 +20,8 @@ import { ContactComponent } from "./pages/contact/contact.component";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 import { ReactiveFormsModule } from "@angular/forms";
+import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatDividerModule } from "@angular/material/divider";
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import { ReactiveFormsModule } from "@angular/forms";
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
+    MatSidenavModule,
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
