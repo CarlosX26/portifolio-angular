@@ -15,16 +15,17 @@ section {
   padding: 16px 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 16px;
 }
 
 .experience__item {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 32px;
 
   & > .mat-card {
-    width: 80%;
+    position: relative;
     display: flex;
     gap: 16px;
   }
@@ -37,8 +38,8 @@ section {
 }
 
 .marker__icon {
-  width: 5%;
   height: 56px;
+  width: 56px;
   display: flex;
   border-radius: 50%;
   justify-content: center;
@@ -53,9 +54,21 @@ section {
     font-size: 40px;
   }
 }
+.point {
+  width: 40px;
+  height: 40px;
+  background-color: #424242;
+  position: absolute;
+  top: calc(50% - 32px);
+  rotate: 45deg;
+  left: -18px;
+}
 
 @media (width <= 1040px) {
   .marker__icon {
+    display: none;
+  }
+  .point {
     display: none;
   }
   .experience__item > .mat-card {
