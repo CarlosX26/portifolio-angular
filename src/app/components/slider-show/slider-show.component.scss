@@ -6,12 +6,8 @@
   display: flex;
   overflow: auto;
   gap: 16px;
-  position: relative;
+
   &::-webkit-scrollbar {
     width: 0;
-  }
-  & > button {
-    position: absolute;
-    top: 50%;
   }
 }
