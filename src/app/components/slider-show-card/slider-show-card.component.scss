@@ -36,3 +36,25 @@
     gap: 16px;
   }
 }
+
+@media (width <= 990px) {
+  .mat-card {
+    & > video {
+      height: 65%;
+    }
+  }
+}
+@media (width <= 540px) {
+  .mat-card {
+    & > video {
+      height: 60%;
+    }
+  }
+}
+@media (width <= 350px) {
+  .mat-card {
+    & > video {
+      height: 55%;
+    }
+  }
+}
