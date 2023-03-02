@@ -2,7 +2,7 @@
 
 section {
   min-height: calc(100vh - 64px);
-  background-color: $gray2;
+  background-color: $gray-3;
 }
 .container > h2 {
   color: $white;
@@ -44,7 +44,7 @@ section {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  background-color: #424242;
+  background-color: $gray-2;
 
   & > .mat-icon {
     height: unset;
@@ -57,7 +57,7 @@ section {
 .point {
   width: 40px;
   height: 40px;
-  background-color: #424242;
+  background-color: $gray-2;
   position: absolute;
   top: calc(50% - 32px);
   rotate: 45deg;
