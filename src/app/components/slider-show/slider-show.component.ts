@@ -9,8 +9,6 @@ import { IProjectsList } from "src/app/services/database/types";
 export class SliderShowComponent implements OnInit {
   scroll: number = 0;
 
-  showingNow = {};
-
   @Input() listToRender!: IProjectsList[];
 
   constructor() {}
