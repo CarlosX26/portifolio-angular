@@ -16,7 +16,9 @@ import { SliderShowCardComponent } from "./components/slider-show-card/slider-sh
 import { MatButtonModule } from "@angular/material/button";
 import { ExperiencesComponent } from "./pages/experiences/experiences.component";
 import { MatIconModule } from "@angular/material/icon";
-import { ContactComponent } from './pages/contact/contact.component';
+import { ContactComponent } from "./pages/contact/contact.component";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatInputModule } from "@angular/material/input";
 
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { ContactComponent } from './pages/contact/contact.component';
     MatCardModule,
     MatButtonModule,
     MatIconModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
