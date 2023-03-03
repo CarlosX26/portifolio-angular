@@ -66,4 +66,35 @@ export const projectsList: IProjectsList[] = [
       },
     ],
   },
+  {
+    name: "Drop Mail",
+    video: "../../../assets/video/drop-mail-demo.mp4",
+    description:
+      "Esta é uma aplicação web, onde o usúario tem acesso a uma caixa de emails temporário.",
+    links: [
+      {
+        name: "Ver projeto",
+        ref: "https://drop-mail-temp.vercel.app/",
+      },
+      {
+        name: "Github",
+        ref: "https://github.com/CarlosX26/drop-mail",
+      },
+    ],
+  },
+  {
+    name: "Portfólio React",
+    video: "../../../assets/video/portifolio-react-demo.mp4",
+    description: "Esta é uma landing page de um portifólio pessoal.",
+    links: [
+      {
+        name: "Ver projeto",
+        ref: "https://carlos-jr.netlify.app/",
+      },
+      {
+        name: "Github",
+        ref: "https://github.com/CarlosX26/my-portfolio",
+      },
+    ],
+  },
 ];

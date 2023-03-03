@@ -61,6 +61,10 @@ video {
   .container {
     min-height: calc(100vh - 56px);
   }
+  .box__image > img {
+    width: 200px;
+    height: 200px;
+  }
   video {
     object-fit: cover;
   }
