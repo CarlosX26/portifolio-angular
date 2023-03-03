@@ -19,6 +19,10 @@
     [loop]="true"
     [muted]="true"
     [controls]="false"
-    src="../../../assets/video/bg-video.webm"
-  ></video>
+    playsinline
+    poster="../../../assets/img/poster-video.webp"
+  >
+    <source src="../../../assets/video/bg-video.webm" type="video/webm" />
+    <source src="../../../assets/video/bg-video.mp4" type="video/mp4" />
+  </video>
 </main>
