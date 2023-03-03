@@ -1,5 +1,10 @@
 <mat-card>
-  <video autoplay loop playsinline muted [src]="elementVideo"></video>
+  <video
+    [autoplay]="true"
+    [loop]="true"
+    [muted]="true"
+    [src]="elementVideo"
+  ></video>
   <div>
     <mat-card-title>{{ elementName }}</mat-card-title>
     <mat-card-content>
