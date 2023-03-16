@@ -1,6 +1,6 @@
-# Portfólio Angular
+# PORTIFÓLIO ANGULAR
 
-Este é meu portfólio desenvolvido usando o framework Angular.
+Esta aplicação foi criada durante um processo seletivo para uma vaga, onde desenvolvi um portfólio pessoal utilizando Angular, Angular Material e Sass. O objetivo era demonstrar minhas habilidades em desenvolvimento front-end e apresentar um pouco sobre minha experiência e habilidades técnicas. O portfólio conta com uma interface elegante e responsiva, que permite a navegação intuitiva entre as diferentes seções do site. Além disso, o uso de Angular Material e Sass permite a criação de uma interface visualmente atraente e consistente em todo o site. O portfólio representa um excelente exemplo do meu trabalho e pode ser usado como uma ferramenta para demonstrar minhas habilidades em futuros processos seletivos.
 
 ## Rodando localmente
 
