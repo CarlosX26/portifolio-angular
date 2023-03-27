@@ -1,6 +1,5 @@
 import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
-import { ContactService, IContactInfo } from "src/app/services/contact.service";
 
 @Component({
   selector: "app-contact",
@@ -8,12 +7,7 @@ import { ContactService, IContactInfo } from "src/app/services/contact.service";
   styleUrls: ["./contact.component.scss"],
 })
 export class ContactComponent implements OnInit {
-  contactInfo!: IContactInfo;
-
-  constructor(
-    private formBuilder: FormBuilder,
-    private contactService: ContactService
-  ) {}
+  constructor(private formBuilder: FormBuilder) {}
 
   formGroup: FormGroup = this.formBuilder.group({
     name: [
@@ -27,11 +21,7 @@ export class ContactComponent implements OnInit {
     ],
   });
 
-  ngOnInit(): void {
-    this.contactService.getContactInfos().subscribe((data) => {
-      this.contactInfo = data.contact;
-    });
-  }
+  ngOnInit(): void {}
 
   onSubmit(): void {
     if (this.formGroup.valid) {
